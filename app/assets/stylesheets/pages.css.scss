@@ -10,8 +10,6 @@
 	padding: 120px 0;
 }
 
-
-
 .youtubevideo {
 	width: 560px;
 	height: 315px; 
@@ -35,7 +33,10 @@ footer {
   padding: 100px 0;
 }
 
-@media (max-width: 768px) {       
+@media (max-width: 1024px) {       
+	.jumbotron {
+		height: auto;
+	}
 	.headline {
 		padding: 0px 0;
 	}
@@ -44,3 +45,5 @@ footer {
 		height: 203px;
 	}
 }
+
+
