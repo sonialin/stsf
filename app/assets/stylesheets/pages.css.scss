@@ -2,15 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron {
+#home {
 	height: 510px;
 	position: relative;
 	top: -20px;
 	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background-image: url(http://res.cloudinary.com/dxytnnzk9/image/upload/v1391439636/happymanv2_opdojf.jpg);
+	background-size: cover;
+	background-position: 50% 20%;
 }
 
-.headline {
-	padding: 120px 0;
+#jumbotron2 {
+	height: 350px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+#headline1 {
+	padding-top: 120px 0;
 }
 
 .btn-secondary { 
@@ -19,6 +31,45 @@
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle .btn-secondary
 { color: #ffffff; background-color: #323232; border-color: #444; }
 
+/* goodreads widget starts*/
+#goodreads-widget {
+    font-family: georgia, serif;
+    padding: 18px 0;
+    width:800px;
+    /*position: relative;
+    right: -20%;*/
+  }
+  #goodreads-widget h1 {
+    font-weight:normal;
+    font-size: 16px;
+    border-bottom: 1px solid #BBB596;
+    margin-bottom: 0;
+  }
+  #goodreads-widget a {
+    text-decoration: none;
+    color:#660;
+  }
+  iframe{
+    background-color: #E5E4E2;
+    width: 800px;
+  }
+  #goodreads-widget a:hover { text-decoration: underline; }
+  #goodreads-widget a:active {
+    color:#660;
+  }
+  #gr_footer {
+    width: auto;
+    border-top: 1px solid #BBB596;
+    text-align: right;
+  }
+  #goodreads-widget .gr_branding{
+    color: #382110;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: verdana, arial, helvetica, sans-serif;
+  }
+/* goodreads widget ends*/
+
 .youtubevideo {
 	width: 560px;
 	height: 315px; 
@@ -26,7 +77,7 @@
 
 
 .featurette-divider {
-  margin: 80px 0;
+  margin: 30px 0;
 }
 
 .call-to-action {
@@ -38,20 +89,57 @@
   margin: 10px;
 }
 
+.portfolio-item {
+	margin-bottom: 25px;
+}
+
 footer {
   padding: 50px 0 50px 0;
 }
 
-@media (max-width: 1200px) {       
-	.jumbotron {
+@media (max-width: 1200px) { 
+/*
+	#home {
+		height: auto;
+	}*/
+
+	#jumbotron2 {
 		height: auto;
 	}
+
 	.headline {
 		padding: 0px 0;
 	}
+
+  #book {
+  	max-width: 350px;
+  }
+
 	.youtubevideo {
 		width: 340px;
 		height: 191px;
 	}
+}
+
+@media (max-width: 860px) {
+
+	#home {
+		background-image: url(http://res.cloudinary.com/dxytnnzk9/image/upload/v1391440036/happymansmall_g6a6wi.jpg);
+	}
+
+	/* goodreads widget starts*/
+	#goodreads-widget {
+    width: 340px;
+  }
+
+  #gr_footer {
+    width: 340px;
+  }
+
+  iframe {
+  	width: 340px;
+  }
+  /* goodreads widget ends*/
+
 }
 
