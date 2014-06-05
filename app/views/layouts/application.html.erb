@@ -69,10 +69,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home" style="font-size: 1.2em">HOME</a></li>
-            <li><a href="#reviews" style="font-size: 1.2em">REVIEWS</a></li>
-            <li><a href="#jumbotron2" style="font-size: 1.2em">BOOK</a></li>
-            <li><a href="#trailer" style="font-size: 1.2em">TRAILER</a></li>
+            <li><a href="/" style="font-size: 1.2em">HOME</a></li>
+            <li><a href="/#reviews" style="font-size: 1.2em">REVIEWS</a></li>
+            <li><%= link_to 'NEWS', media_path, :style => "font-size: 1.2em" %></li>
+            <li><a href="/#trailer" style="font-size: 1.2em">TRAILER</a></li>
             <li><a href="#contact"  style="font-size: 1.2em">CONTACT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -80,6 +80,29 @@
     </nav>
 
 		<%= yield %>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <h3>Check out more comics</h3>
+              <a href="http://entreprenos.com" target="_blank" style="text-decoration: none;"><h4>Visit EntrepreNo's</h4></a>
+              <br />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 text-center" style="border-left:1px solid #E5E4E2;">
+            <ul class="list-inline">
+              <h3>Connect with us</h3>
+              <li><a href="https://www.facebook.com/entreprenos" target="_blank"><i class="fa fa-facebook fa-2x"></a></i></li>
+              <li><a href="https://twitter.com/EntrepreNos" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="mailto:info@entreprenos.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <br />
+          <p class="text-center">Copyright &copy; <a href="http://entreprenos.com" target="_blank" style="text-decoration: none">EntrepreNo's</a> 2014</p>
+      </div>
+    </footer>
 
 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>

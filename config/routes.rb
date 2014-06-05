@@ -1,5 +1,6 @@
 Stsf::Application.routes.draw do
   get "pages/home"
+  get "media" => "pages#media"
 
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.

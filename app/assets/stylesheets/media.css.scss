@@ -1,0 +1,39 @@
+#award-click {
+	position: relative;
+	top: 0.9em;
+	color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.action-text {
+	position: relative;
+	top: -8px;
+}
+
+.action-icon {
+	position: relative;
+	top: 0px;
+}
+
+#read-release {
+	position: relative;
+	top: 30px;
+}
+
+#media-headline small a, #media-headline small a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+@media (max-width: 1200px) {
+	#media-headline {
+		position: relative;
+		top: -50px;
+	}
+
+	#award-click {
+		top: 0;
+	}
+	#read-release {
+		top: 0;
+	}
+}
